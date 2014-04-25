@@ -3,7 +3,6 @@
 /* Padding below the footer and lighter body text */
 
 body {
-  padding-bottom: 40px;
   color: #5a5a5a;
 }
 
@@ -59,7 +58,6 @@ h1 {
 	color: #fff;
 	text-align: center;
 }
-
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
@@ -71,6 +69,16 @@ h1 {
     font-size: 18px;
     line-height: .4;
   }
-
 }
+
+.scroller {
+    overflow: scroll;
+}
+
+#contentThingy {
+	color : #000000;
+	text-align:left;
+}
+
+
 

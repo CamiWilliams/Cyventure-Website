@@ -237,11 +237,11 @@ input, button, select, textarea {
 	line-height: inherit
 }
 a {
-	color: #428bca;
+	color: #A30000;
 	text-decoration: none
 }
 a:hover, a:focus {
-	color: #2a6496;
+	color: #D63333;
 	text-decoration: underline
 }
 a:focus {
@@ -373,7 +373,7 @@ cite {
 	color: #999
 }
 .text-primary {
-	color: #428bca
+	color: #A30000
 }
 a.text-primary:hover {
 	color: #3071a9
@@ -404,7 +404,7 @@ a.text-danger:hover {
 }
 .bg-primary {
 	color: #fff;
-	background-color: #428bca
+	background-color: #A30000
 }
 a.bg-primary:hover {
 	background-color: #3071a9
@@ -1737,7 +1737,7 @@ textarea.input-lg, select[multiple].input-lg {
 }
 .btn-primary {
 	color: #fff;
-	background-color: #428bca;
+	background-color: #A30000;
 	border-color: #357ebd
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary {
@@ -1749,11 +1749,11 @@ textarea.input-lg, select[multiple].input-lg {
 	background-image: none
 }
 .btn-primary.disabled, .btn-primary[disabled], fieldset[disabled] .btn-primary, .btn-primary.disabled:hover, .btn-primary[disabled]:hover, fieldset[disabled] .btn-primary:hover, .btn-primary.disabled:focus, .btn-primary[disabled]:focus, fieldset[disabled] .btn-primary:focus, .btn-primary.disabled:active, .btn-primary[disabled]:active, fieldset[disabled] .btn-primary:active, .btn-primary.disabled.active, .btn-primary[disabled].active, fieldset[disabled] .btn-primary.active {
-	background-color: #428bca;
+	background-color: #A30000;
 	border-color: #357ebd
 }
 .btn-primary .badge {
-	color: #428bca;
+	color: #A30000;
 	background-color: #fff
 }
 .btn-success {
@@ -1841,7 +1841,7 @@ textarea.input-lg, select[multiple].input-lg {
 	background-color: #fff
 }
 .btn-link {
-	color: #428bca;
+	color: #A30000;
 	font-weight: 400;
 	cursor: pointer;
 	border-radius: 0
@@ -1855,7 +1855,7 @@ textarea.input-lg, select[multiple].input-lg {
 	border-color: transparent
 }
 .btn-link:hover, .btn-link:focus {
-	color: #2a6496;
+	color: #D63333;
 	text-decoration: underline;
 	background-color: transparent
 }
@@ -2594,7 +2594,7 @@ input[type=submit].btn-block, input[type=reset].btn-block, input[type=button].bt
 	color: #fff;
 	text-decoration: none;
 	outline: 0;
-	background-color: #428bca
+	background-color: #A30000
 }
 .dropdown-menu > .disabled > a, .dropdown-menu > .disabled > a:hover, .dropdown-menu > .disabled > a:focus {
 	color: #999
@@ -2926,7 +2926,7 @@ textarea.input-group-sm > .form-control, textarea.input-group-sm > .input-group-
 }
 .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
 	background-color: #eee;
-	border-color: #428bca
+	border-color: #A30000
 }
 .nav .nav-divider {
 	height: 1px;
@@ -3011,7 +3011,7 @@ textarea.input-group-sm > .form-control, textarea.input-group-sm > .input-group-
 }
 .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
 	color: #fff;
-	background-color: #428bca
+	background-color: #A30000
 }
 .nav-stacked > li {
 	float: none
@@ -3530,7 +3530,7 @@ textarea.input-group-sm > .form-control, textarea.input-group-sm > .input-group-
 	padding: 6px 12px;
 	line-height: 1.42857143;
 	text-decoration: none;
-	color: #428bca;
+	color: #A30000;
 	background-color: #fff;
 	border: 1px solid #ddd;
 	margin-left: -1px
@@ -3545,15 +3545,15 @@ textarea.input-group-sm > .form-control, textarea.input-group-sm > .input-group-
 	border-top-right-radius: 4px
 }
 .pagination > li > a:hover, .pagination > li > span:hover, .pagination > li > a:focus, .pagination > li > span:focus {
-	color: #2a6496;
+	color: #D63333;
 	background-color: #eee;
 	border-color: #ddd
 }
 .pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
 	z-index: 2;
 	color: #fff;
-	background-color: #428bca;
-	border-color: #428bca;
+	background-color: #A30000;
+	border-color: #A30000;
 	cursor: default
 }
 .pagination > .disabled > span, .pagination > .disabled > span:hover, .pagination > .disabled > span:focus, .pagination > .disabled > a, .pagination > .disabled > a:hover, .pagination > .disabled > a:focus {
@@ -3648,7 +3648,7 @@ textarea.input-group-sm > .form-control, textarea.input-group-sm > .input-group-
 	background-color: gray
 }
 .label-primary {
-	background-color: #428bca
+	background-color: #A30000
 }
 .label-primary[href]:hover, .label-primary[href]:focus {
 	background-color: #3071a9
@@ -3708,7 +3708,7 @@ a.badge:hover, a.badge:focus {
 	cursor: pointer
 }
 a.list-group-item.active > .badge, .nav-pills > .active > a > .badge {
-	color: #428bca;
+	color: #A30000;
 	background-color: #fff
 }
 .nav-pills > li > a > .badge {
@@ -3763,7 +3763,7 @@ a.list-group-item.active > .badge, .nav-pills > .active > a > .badge {
 	margin-right: auto
 }
 a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
-	border-color: #428bca
+	border-color: #A30000
 }
 .thumbnail .caption {
 	padding: 9px;
@@ -3870,7 +3870,7 @@ to {
 	line-height: 20px;
 	color: #fff;
 	text-align: center;
-	background-color: #428bca;
+	background-color: #A30000;
 	-webkit-box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
 	box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
 	-webkit-transition: width .6s ease;
@@ -3979,8 +3979,8 @@ a.list-group-item:hover, a.list-group-item:focus {
 a.list-group-item.active, a.list-group-item.active:hover, a.list-group-item.active:focus {
 	z-index: 2;
 	color: #fff;
-	background-color: #428bca;
-	border-color: #428bca
+	background-color: #A30000;
+	border-color: #A30000
 }
 a.list-group-item.active .list-group-item-heading, a.list-group-item.active:hover .list-group-item-heading, a.list-group-item.active:focus .list-group-item-heading {
 	color: inherit
@@ -4214,18 +4214,18 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 	border-bottom-color: #ddd
 }
 .panel-primary {
-	border-color: #428bca
+	border-color: #A30000
 }
 .panel-primary > .panel-heading {
 	color: #fff;
-	background-color: #428bca;
-	border-color: #428bca
+	background-color: #A30000;
+	border-color: #A30000
 }
 .panel-primary > .panel-heading+ .panel-collapse .panel-body {
-	border-top-color: #428bca
+	border-top-color: #A30000
 }
 .panel-primary > .panel-footer+ .panel-collapse .panel-body {
-	border-bottom-color: #428bca
+	border-bottom-color: #A30000
 }
 .panel-success {
 	border-color: #d6e9c6
@@ -4799,7 +4799,6 @@ button.close {
 	padding-bottom: 20px;
 	color: #fff;
 	text-align: center;
-	text-shadow: 0 1px 2px rgba(0,0,0,.6)
 }
 .carousel-caption .btn {
 	text-shadow: none

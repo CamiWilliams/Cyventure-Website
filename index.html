@@ -11,6 +11,14 @@
 
 		<!-- Bootstrap core CSS -->
 		<link href="bootstrap-3.1.1-dist/css/bootstrap.min.css" rel="stylesheet">
+		<script type='text/javascript' src='https://cdn.firebase.com/js/client/1.0.11/firebase.js'></script>
+
+		<!-- Bootstrap core JavaScript
+		================================================== -->
+		<!-- Placed at the end of the document so the pages load faster -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="bootstrap-3.1.1-dist/js/bootstrap.min.js"></script>
+		<script src="../../assets/js/docs.min.js"></script>
 
 		<!-- Just for debugging purposes. Don't actually copy this line! -->
 		<!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -24,97 +32,25 @@
 		<!-- Custom styles for this template -->
 		<link href="carousel.css" rel="stylesheet">
 		<style type="text/css"></style><style id="holderjs-style" type="text/css"></style>
+		
+		<script src="javascriptpart.js"></script>
 	</head>
 	<!-- NAVBAR
 	================================================== -->
 
-	<body>
+	<body onload="fillTables()">
 
 		<div id="myCarousel" class="carousel slide" data-ride="carousel">
 			<!-- Indicators -->
 			<ol class="carousel-indicators">
-				<li data-target="#myCarousel" data-slide-to="0" class=""></li>
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
 				<li data-target="#myCarousel" data-slide-to="1" class=""></li>
 				<li data-target="#myCarousel" data-slide-to="2" class=""></li>
-				<li data-target="#myCarousel" data-slide-to="3" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="3" class=""></li>
+				<li data-target="#myCarousel" data-slide-to="4" class=""></li>
+				<li data-target="#myCarousel" data-slide-to="5" class=""></li>
 			</ol>
 			<div class="carousel-inner">
-				<div class="item">
-
-					<div class="container">
-						<div class="carousel-caption">
-							<h1>Top 25 Most Clues</h1>
-
-							<code>
-								<p>
-									Players who have completed the most clues of Cyventure
-								</p>
-							</code>
-							<div class="panel panel-default">
-								<!-- Default panel contents -->
-								<table class="table table-striped header-fixed">
-									<tbody id = "clues">
-										<tr>
-											<td>1</td>
-											<td>Cami Williams</td>
-											<td>500 clues</td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="item">
-
-					<div class="container">
-						<div class="carousel-caption">
-							<h1>Top 25 Most Games</h1>
-
-							<code>
-								<p>
-									Players who have played the most games of Cyventure
-								</p>
-							</code>
-							<div class="panel panel-default">
-								<!-- Default panel contents -->
-								<table class="table table-striped header-fixed">
-									<tbody id = "games">
-										<tr>
-											<td>1</td>
-											<td>Cami Williams</td>
-											<td>500 games</td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="item">
-					<div class="container">
-						<div class="carousel-caption">
-							<h1>Top 25 Longest Times</h1>
-							<code>
-								<p>
-									Players who have played the longest in Cyventure
-								</p>
-							</code>
-							<div class="panel panel-default">
-								<!-- Default panel contents -->
-								<table class="table table-striped header-fixed">
-									<tbody id = "longest">
-										<tr>
-											<td>1</td>
-											<td>Cami Williams</td>
-											<td>05:04:03:02s</td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
-						</div>
-					</div>
-				</div>
 
 				<div class="item active">
 
@@ -145,19 +81,141 @@
 
 					</div>
 				</div>
+
+				<div class="item">
+
+					<div class="container">
+						<div class="carousel-caption">
+							<h1>Top 10 Most Clues</h1>
+
+							<code>
+								<p>
+									Players who have completed the most clues of Cyventure
+								</p>
+							</code>
+							<div class="panel panel-default">
+								<!-- Default panel contents -->
+								<table class="table table-striped header-fixed">
+									<tbody id = "clues">
+										<tr>
+											<td>1</td>
+											<td>Cami Williams</td>
+											<td>500 clues</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+
+					<div class="container">
+						<div class="carousel-caption">
+							<h1>Top 10 Most Games</h1>
+
+							<code>
+								<p>
+									Players who have played the most games of Cyventure
+								</p>
+							</code>
+							<div class="panel panel-default">
+								<!-- Default panel contents -->
+								<table class="table table-striped header-fixed">
+									<tbody id = "games">
+										<tr>
+											<td>1</td>
+											<td>Cami Williams</td>
+											<td>500 games</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="item">
+
+					<div class="container">
+						<div class="carousel-caption">
+							<h1>Top 10 Winners</h1>
+
+							<code>
+								<p>
+									Players who have won the most games of Cyventure
+								</p>
+							</code>
+							<div class="panel panel-default">
+								<!-- Default panel contents -->
+								<table class="table table-striped header-fixed">
+									<tbody id = "wins">
+										<tr>
+											<td>1</td>
+											<td>Cami Williams</td>
+											<td>500 games</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="item">
+					<div class="container">
+						<div class="carousel-caption">
+							<h1>Top 10 Longest Times</h1>
+							<code>
+								<p>
+									Players who have played the longest in Cyventure
+								</p>
+							</code>
+							<div class="panel panel-default">
+								<!-- Default panel contents -->
+								<table class="table table-striped header-fixed">
+									<tbody id = "longest">
+										<tr>
+											<td>1</td>
+											<td>Cami Williams</td>
+											<td>05:04:03:02s</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="container">
+						<div class="carousel-caption" id = "AboutStuff">
+							<h1>About</h1>
+							<ul class="nav nav-pills nav-justified">
+								<li class="active" id = "over">
+									<a onclick = "fillOverview()">Overview</a>
+								</li>
+								<li id = "team">
+									<a onclick="fillTeam()">The Team</a>
+								</li>
+								<li id = "FAQ">
+									<a onclick = "fillFAQ()">FAQ</a>
+								</li>
+							</ul>
+							<br>
+							<hr>
+							<div id = "contentThingy">
+								<p>Hello this is a test</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
 			</div>
 			<a class="left carousel-control" href="http://getbootstrap.com/examples/carousel/#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
 			<a class="right carousel-control" href="http://getbootstrap.com/examples/carousel/#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
 		</div><!-- /.carousel -->
 
 		</div><!-- /.container -->
-
-		<!-- Bootstrap core JavaScript
-		================================================== -->
-		<!-- Placed at the end of the document so the pages load faster -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-		<script src="bootstrap-3.1.1-dist/js/bootstrap.min.js"></script>
-		<script src="../../assets/js/docs.min.js"></script>
 
 	</body>
 </html>
