@@ -26,15 +26,15 @@ function fillTables() {
 	var win = document.getElementById("wins");
 	win.innerHTML = " ";
 
-	var dataRefC = new Firebase("https://clues309.firebaseio.com/users");
+	var dataRefC = new Firebase("https://cyventure-test.firebaseio.com/users");
 
 	dataRefC.on('value', function(snapshot) {
 		snapshot.forEach(function(childSnapshot) {
 			var name = childSnapshot.val().name;
 			var totalClues;
 
-			var dataRefC2 = new Firebase("https://clues309.firebaseio.com/users/" + childSnapshot.name() + "/scores/totalClues");
-			dataRefC2.on('value', function(snapshot) {
+			var dataRefC2 = new Firebase("https://cyventure-test.firebaseio.com/users/" + childSnapshot.name() + "/scores/totalClues");
+			dataRefC2.once('value', function(snapshot) {
 				totalClues = snapshot.val();
 				var i = 0;
 				for ( i = 0; i < scores.length; i++) {
@@ -54,14 +54,14 @@ function fillTables() {
 		}
 	});
 
-	var dataRefG = new Firebase("https://clues309.firebaseio.com/users");
+	var dataRefG = new Firebase("https://cyventure-test.firebaseio.com/users");
 
-	dataRefG.on('value', function(snapshot) {
+	dataRefG.once('value', function(snapshot) {
 		snapshot.forEach(function(childSnapshot) {
 			var name = childSnapshot.val().name;
 			var totalClues;
 
-			var dataRefG2 = new Firebase("https://clues309.firebaseio.com/users/" + childSnapshot.name() + "/scores/totalGames");
+			var dataRefG2 = new Firebase("https://cyventure-test.firebaseio.com/users/" + childSnapshot.name() + "/scores/totalGames");
 			dataRefG2.on('value', function(snapshot) {
 				totalClues = snapshot.val();
 				var i = 0;
@@ -82,14 +82,14 @@ function fillTables() {
 		}
 	});
 
-	var dataRefD = new Firebase("https://clues309.firebaseio.com/users");
+	var dataRefD = new Firebase("https://cyventure-test.firebaseio.com/users");
 
-	dataRefD.on('value', function(snapshot) {
+	dataRefD.once('value', function(snapshot) {
 		snapshot.forEach(function(childSnapshot) {
 			var name = childSnapshot.val().name;
 			var totalClues;
 
-			var dataRefD2 = new Firebase("https://clues309.firebaseio.com/users/" + childSnapshot.name() + "/scores/days");
+			var dataRefD2 = new Firebase("https://cyventure-test.firebaseio.com/users/" + childSnapshot.name() + "/scores/days");
 			dataRefD2.on('value', function(snapshot) {
 				totalClues = snapshot.val();
 				var i = 0;
@@ -110,14 +110,14 @@ function fillTables() {
 		}
 	});
 
-	var dataRefW = new Firebase("https://clues309.firebaseio.com/users");
+	var dataRefW = new Firebase("https://cyventure-test.firebaseio.com/users");
 
-	dataRefW.on('value', function(snapshot) {
+	dataRefW.once('value', function(snapshot) {
 		snapshot.forEach(function(childSnapshot) {
 			var name = childSnapshot.val().name;
 			var totalClues;
 
-			var dataRefW2 = new Firebase("https://clues309.firebaseio.com/users/" + childSnapshot.name() + "/scores/totalWins");
+			var dataRefW2 = new Firebase("https://cyventure-test.firebaseio.com/users/" + childSnapshot.name() + "/scores/totalWins");
 			dataRefW2.on('value', function(snapshot) {
 				totalClues = snapshot.val();
 				var i = 0;
